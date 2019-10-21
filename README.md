@@ -23,21 +23,33 @@ $ ./main
 * `GET /books/{id}` get single book
 * `DELETE /books/{id}`
 * `POST /books` create a new book
+  <details><summary>Request sample</summary>
+  
+  ```json
+    {
+     "isbn":"54887",
+     "title": "Book Three",
+     "author": {
+          "firstname": "Carol",
+          "lastname": "Williams"
+      }
+    }
   ```
-    # Request sample
-    # {
-    #   "isbn":"4545454",
-    #   "title":"Book Three",
-    #   "author":{"firstname":"Harry",  "lastname":"White"}
-    # }
-  ```
+  
+  </details>
 
 * `PUT /books/[id]` update a book
+  <details><summary>Request sample</summary>
+  
+  ```json
+    {
+      "id": "8498081",
+      "isbn": "54887",
+      "title": "Book Three",
+      "author": {
+          "firstname": "Caroll",
+          "lastname": "Lewis"
+       }
+    }
   ```
-    # Request sample
-    # {
-    #   "isbn":"4545454",
-    #   "title":"Updated Title",
-    #   "author":{"firstname":"Harry",  "lastname":"White"}
-    # }
-  ```
+  </details>
